@@ -36,9 +36,7 @@ log_file = log_file.drop(['cik', 'accession','extention'], axis=1)
 # create empty dictionary to store ip session data
 ip_dict = {}
 
-
 # file to write session information to
-
 fileout = output_file
 
 if os.path.exists(fileout):
@@ -48,7 +46,6 @@ else:
 
 output_file = open(fileout,
                    append_write)
-
 
 counter = 0
 
